@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.layoutonly.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/from_label_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Από:"
+        android:textSize="16sp"
+        android:padding="4dp"/>
+
+
+    <TextView
+        android:id="@+id/to_label_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Προς:"
+        android:textSize="16sp"
+        android:padding="4dp"/>
+
+    <CheckBox
+        android:id="@+id/return_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" με επιστροφή"
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:layout_marginBottom="4dp"/>
+
+    <CheckBox
+        android:id="@+id/stops_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" με ενδιάμεσες στάσεις"
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/departure_label_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ημ. Αναχώρησης:"
+        android:textSize="16sp"
+        android:padding="4dp"/>
+
+
+    <TextView
+        android:id="@+id/arrival_label_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ημ. Άφιξης:"
+        android:textSize="16sp"
+        android:padding="4dp"/>
+
+    <CheckBox
+        android:id="@+id/three_days_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+/- 3 ημέρες απόκλιση"
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/passengers_label_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Επιβάτες"
+        android:textSize="16sp"
+        android:padding="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/adults_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/adults_label_text_view"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ενήλικες"
+            android:textSize="16sp"
+            android:padding="4dp"/>
+
+        <Button
+            android:id="@+id/adults_plus_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/adults_number_text_view"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:padding="4dp"/>
+
+        <Button
+            android:id="@+id/adults_minuns_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:layout_margin="4dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/children_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/children_label_text_view"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Παιδιά"
+            android:textSize="16sp"
+            android:padding="4dp"/>
+
+        <Button
+            android:id="@+id/children_plus_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/children_number_text_view"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:padding="4dp"/>
+
+        <Button
+            android:id="@+id/children_minuns_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:layout_margin="4dp" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/money_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/money_prompt"
+        android:entries="@array/money_arrays"
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:layout_margin="16dp"  />
+
+    <Spinner
+        android:id="@+id/seat_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/seat_prompt"
+        android:entries="@array/seat_arrays"
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:layout_margin="16dp"  />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Αναζήτηση"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_margin="4dp" />
+
+
+</LinearLayout>

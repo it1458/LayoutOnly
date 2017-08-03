@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LayoutOnly</string>
+
+    <string name="money_prompt">Διαλέξτε χρηματικό όριο</string>
+
+    <string-array name="money_arrays">
+        <item>Χωρίς όριο</item>
+        <item>Έως 400 € </item>
+        <item>Έως 300 €</item>
+        <item>Έως 200 €</item>
+        <item>Έως 100 €</item>
+    </string-array>
+
+    <string name="seat_prompt">Διαλέξτε θέση</string>
+
+    <string-array name="seat_arrays">
+        <item>Όλες οι θέσεις</item>
+        <item>Οικονομική κατηγορία</item>
+        <item>Επαγγελματική κατηγορία</item>
+    </string-array>
+
+</resources>
